@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/Qt/6.4.2/mingw_64/include",
-                "C:/Users/akash/opencv/build/include"
+                "C:/opencv_build/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -22,7 +22,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/Qt/6.4.2/mingw_64/include",
-                "C:/Users/akash/opencv/build/include"
+                "C:/opencv_build/include"
                 
             ],
             "defines": [

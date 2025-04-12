@@ -29,6 +29,9 @@ find_package(Qt6 COMPONENTS Widgets REQUIRED)
 # ——————————————————————————————
 set(SOURCES
     src/main.cpp
+    src/mainwindow.cpp
+    src/node_framework.cpp
+
 )
 
 set(HEADERS

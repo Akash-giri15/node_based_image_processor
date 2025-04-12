@@ -1,0 +1,26 @@
+[
+{
+  "directory": "D:/study/image processor/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/MyApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyApp.dir\\MyApp_autogen\\mocs_compilation.cpp.obj -c \"D:\\study\\image processor\\build\\MyApp_autogen\\mocs_compilation.cpp\"",
+  "file": "D:/study/image processor/build/MyApp_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/MyApp.dir/MyApp_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "D:/study/image processor/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/MyApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyApp.dir\\src\\main.cpp.obj -c \"D:\\study\\image processor\\src\\main.cpp\"",
+  "file": "D:/study/image processor/src/main.cpp",
+  "output": "CMakeFiles/MyApp.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/study/image processor/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/MyApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyApp.dir\\src\\mainwindow.cpp.obj -c \"D:\\study\\image processor\\src\\mainwindow.cpp\"",
+  "file": "D:/study/image processor/src/mainwindow.cpp",
+  "output": "CMakeFiles/MyApp.dir/src/mainwindow.cpp.obj"
+},
+{
+  "directory": "D:/study/image processor/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/MyApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyApp.dir\\src\\node_framework.cpp.obj -c \"D:\\study\\image processor\\src\\node_framework.cpp\"",
+  "file": "D:/study/image processor/src/node_framework.cpp",
+  "output": "CMakeFiles/MyApp.dir/src/node_framework.cpp.obj"
+}
+]

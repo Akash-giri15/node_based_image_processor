@@ -1,0 +1,5 @@
+D:/study/image processor/build/CMakeFiles/MyApp.dir
+D:/study/image processor/build/CMakeFiles/edit_cache.dir
+D:/study/image processor/build/CMakeFiles/rebuild_cache.dir
+D:/study/image processor/build/CMakeFiles/MyApp_autogen_timestamp_deps.dir
+D:/study/image processor/build/CMakeFiles/MyApp_autogen.dir
