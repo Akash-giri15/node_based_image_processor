@@ -1,67 +1,68 @@
+// ----------------- mainwindow.h -----------------
 #pragma once
 #include <QMainWindow>
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QGraphicsPathItem>
 #include <QtWidgets>
 #include <opencv2/opencv.hpp>
 #include <memory>
 #include "node_framework.h"
 
+class PortItem;
+class EdgeItem;
+
 class NodeItem : public QGraphicsItem {
 public:
-    NodeItem(QString title, QColor color = Qt::gray, int id = -1)
-        : title(title), color(color), width(150), height(80), nodeId(id) {
-        setFlags(QGraphicsItem::ItemIsMovable |
-                 QGraphicsItem::ItemSendsGeometryChanges);
-    }
+    NodeItem(Node* backend, QColor color=Qt::gray);
+    QRectF boundingRect() const override;
+    void paint(QPainter*,const QStyleOptionGraphicsItem*,QWidget*) override;
 
-    QRectF boundingRect() const override {
-        return QRectF(0, 0, width, height);
-    }
-
-    void paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget*) override {
-        painter->setBrush(color);
-        painter->drawRoundedRect(0, 0, width, height, 5, 5);
-        painter->setPen(Qt::white);
-        painter->drawText(10, 20, title);
-        painter->setBrush(Qt::darkGray);
-        painter->drawEllipse(-5, height/2 - 5, 10, 10);
-        painter->drawEllipse(width-5, height/2 - 5, 10, 10);
-    }
-
-    int getId() const { return nodeId; }
-
+    Node* backendNode;
+    std::vector<PortItem*> inputs, outputs;
 private:
-    QString title;
-    QColor color;
-    int width, height, nodeId;
+    QColor color; int w=150,h=100;
+};
+
+class PortItem : public QGraphicsEllipseItem {
+public:
+    enum PortType{In,Out};
+
+    PortItem(PortType t,NodeItem* parentNode,int idx);
+    void mousePressEvent(QGraphicsSceneMouseEvent*) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent*) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent*) override;
+
+    PortType type; NodeItem* parentNode; int portIndex;
+    EdgeItem* tempEdge = nullptr;
+};
+
+class EdgeItem : public QGraphicsPathItem {
+public:
+    EdgeItem(PortItem* from);
+    void setTarget(PortItem* to);
+    void updatePath(const QPointF& to);
+    PortItem *fromPort=nullptr,*toPort=nullptr;
 };
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 public:
-    MainWindow(QWidget *parent = nullptr);
-
-private slots:
-    void addInputNode();
-    void addOutputNode();
+    MainWindow(QWidget* parent=nullptr);
+    NodeGraph graph;
     void processGraph();
-
 private:
-    void setupUI();
-    void setupMenu();
-
+    void setupUI(), setupMenu(), setupBCControls(), setupBlurControls();
+    void updateKernelPreview();
     QGraphicsScene* scene;
     QLabel* previewLabel;
-
-    // GUI items
-    NodeItem* inputItem   = nullptr;
-    NodeItem* outputItem  = nullptr;
-
-    // Backend nodes
-    std::shared_ptr<InputNode>  inputNodePtr;
+    std::shared_ptr<InputNode> inputNodePtr;
     std::shared_ptr<OutputNode> outputNodePtr;
-    NodeGraph graph;
-
-    int nodeCounter = 0;
+    std::shared_ptr<BrightnessContrastNode> bcNodePtr;
+    std::shared_ptr<BlurNode> blurNodePtr;
+    // BC UI
+    QWidget* bcWidget=nullptr; QSlider *bSlider,*cSlider; QPushButton *rbBtn,*rcBtn;
+    // Blur UI
+    QWidget* blurWidget=nullptr; QSlider *rSlider,*aSlider,*amtSlider; QComboBox* modeCombo;
+    QTableWidget* kernelTable=nullptr;
 };

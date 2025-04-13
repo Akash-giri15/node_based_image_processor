@@ -367,6 +367,7 @@ D:/study/image\ processor/build/MyApp_autogen/UVLADIE3JM/moc_mainwindow.cpp: D:/
   C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.4.2/mingw_64/include/QtWidgets/QCommonStyle \
+  C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGraphicsPathItem \
   C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGraphicsView \
   C:/Qt/6.4.2/mingw_64/include/QtWidgets/QLayout \
@@ -695,7 +696,6 @@ D:/study/image\ processor/build/MyApp_autogen/UVLADIE3JM/moc_mainwindow.cpp: D:/
   C:/mingw64/include/c++/14.2.0/type_traits \
   C:/mingw64/include/c++/14.2.0/typeinfo \
   C:/mingw64/include/c++/14.2.0/unordered_map \
-  C:/mingw64/include/c++/14.2.0/unordered_set \
   C:/mingw64/include/c++/14.2.0/utility \
   C:/mingw64/include/c++/14.2.0/variant \
   C:/mingw64/include/c++/14.2.0/vector \

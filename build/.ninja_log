@@ -1,0 +1,18 @@
+# ninja log v6
+28531	29315	7662332035631324	MyApp.exe	4abeed4c2d62e471
+4522	9152	7662320827941361	CMakeFiles/MyApp.dir/src/node_framework.cpp.obj	fe56a003542a99a4
+4306	28530	7662331793319491	CMakeFiles/MyApp.dir/src/mainwindow.cpp.obj	294074699f5eebeb
+4297	23227	7662331793163016	CMakeFiles/MyApp.dir/src/main.cpp.obj	3a5a6261f879f85
+24	4290	7662331790366901	D:/study/image processor/build/MyApp_autogen/mocs_compilation.cpp	3a53d78f73614909
+4291	23220	7662331793163016	CMakeFiles/MyApp.dir/MyApp_autogen/mocs_compilation.cpp.obj	70141e769c37e2e5
+24	4290	7662331790366901	D:/study/image processor/build/MyApp_autogen/timestamp	3a53d78f73614909
+24	4290	7662331790366901	MyApp_autogen/mocs_compilation.cpp	3a53d78f73614909
+24	4290	7662331790366901	MyApp_autogen/timestamp	3a53d78f73614909
+315	7948	7662608996762546	build.ninja	dd9db795d835bd97
+68	6655	7662609063630692	MyApp_autogen/timestamp	3a53d78f73614909
+68	6655	7662609063630692	MyApp_autogen/mocs_compilation.cpp	3a53d78f73614909
+68	6655	7662609063630692	D:/study/image processor/build/MyApp_autogen/timestamp	3a53d78f73614909
+68	6655	7662609063630692	D:/study/image processor/build/MyApp_autogen/mocs_compilation.cpp	3a53d78f73614909
+6657	22789	7662609065983873	CMakeFiles/MyApp.dir/MyApp_autogen/mocs_compilation.cpp.obj	70141e769c37e2e5
+6669	22962	7662609066154226	CMakeFiles/MyApp.dir/src/main.cpp.obj	3a5a6261f879f85
+6682	25878	7662609066318861	CMakeFiles/MyApp.dir/src/mainwindow.cpp.obj	294074699f5eebeb

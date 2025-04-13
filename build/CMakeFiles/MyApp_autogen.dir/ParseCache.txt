@@ -372,6 +372,7 @@ D:/study/image processor/src/mainwindow.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.4.2/mingw_64/include/QtWidgets/QCommonStyle
+ mdp:C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGraphicsPathItem
  mdp:C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGraphicsScene
  mdp:C:/Qt/6.4.2/mingw_64/include/QtWidgets/QGraphicsView
  mdp:C:/Qt/6.4.2/mingw_64/include/QtWidgets/QLayout
@@ -700,7 +701,6 @@ D:/study/image processor/src/mainwindow.h
  mdp:C:/mingw64/include/c++/14.2.0/type_traits
  mdp:C:/mingw64/include/c++/14.2.0/typeinfo
  mdp:C:/mingw64/include/c++/14.2.0/unordered_map
- mdp:C:/mingw64/include/c++/14.2.0/unordered_set
  mdp:C:/mingw64/include/c++/14.2.0/utility
  mdp:C:/mingw64/include/c++/14.2.0/variant
  mdp:C:/mingw64/include/c++/14.2.0/vector
